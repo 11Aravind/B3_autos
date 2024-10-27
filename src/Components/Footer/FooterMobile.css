@@ -1,0 +1,18 @@
+@media screen and (max-width: 990px) {
+    footer {
+        .line {
+            margin-top: 5%;
+        }
+
+        .footerContainer {
+            flex-direction: column;
+            gap: 20px;
+
+            .col1,
+            .col2,
+            .col3 {
+                width: 100%;
+            }
+        }
+    }
+}

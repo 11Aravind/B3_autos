@@ -1,0 +1,42 @@
+
+.legislationPage, .gridPage{
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three columns */
+    gap: 20px; /* Space between columns */
+    padding: 10px;
+}
+
+.grid-item {
+    border: 2px dotted #000; /* Dotted border around each group */
+    padding: 10px;
+    display: flex;
+    flex-direction: column; /* Arrange header and data vertically */
+}
+
+.header {
+    border-bottom: 2px solid #000; /* Bottom border for headers */
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 10px; /* Space between header and data */
+}
+
+.data {
+    margin: 5px 0; /* Space between data items */
+}
+
+/* Mobile styles */
+@media (max-width: 768px) {
+    
+    .header {
+        width: 33.33%; /* One third for header */
+        text-align: left; /* Align header to the left */
+    }
+
+    .data {
+        width: 33.33%; /* One third for data */
+        text-align: left; /* Align data to the left */
+    }
+   
+}
+}

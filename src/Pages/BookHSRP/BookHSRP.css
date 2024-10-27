@@ -1,0 +1,139 @@
+.bookHSRPContainer {
+    /* width: 75%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 3% 0%;
+
+    h1 {
+        margin-bottom: 2%;
+    }
+
+    .row {
+        display: flex;
+        margin-bottom: 20px;
+        /* justify-content: space-around; */
+
+        label {
+            width: 40%;
+        }
+
+        input,
+        select {
+            width: 60%;
+            border-radius: 4px;
+            padding: 1%;
+
+        }
+
+
+
+        .getDataBtn {
+            background-color: var(--primary);
+            width: 100%;
+            text-align: center;
+            color: white;
+            padding: 1%;
+            cursor: pointer;
+            border-radius: 4px;
+            margin-top: 2%;
+            pointer-events: none;
+            opacity: 0.5;
+        }
+
+        .enable {
+            pointer-events: auto;
+            opacity: 1;
+        }
+
+        .typeofvehicle {
+            color: green;
+            font-weight: 500;
+            width: 60%;
+
+            /* display: flex;
+            justify-content: space-between; */
+
+            .clear {
+                color: var(--primary);
+                float: right;
+                cursor: pointer;
+            }
+
+            .variant {
+                font-size: 12px;
+                color: black;
+                width: 100%;
+            }
+        }
+
+        .vehicleTypes {
+            display: flex;
+            /* flex-direction: column; */
+            margin-top: 10px;
+            flex-wrap: wrap;
+            gap: 10px;
+            font-size: 0.8rem;
+
+
+            span {
+                width: 100%;
+
+                input {
+                    width: auto;
+                }
+            }
+
+            .radioVehicleTypes {
+                display: flex;
+                flex-direction: column;
+
+                /* width: 50%; */
+                div {
+                    display: flex;
+                    align-items: center;
+                }
+
+                input,
+                label {
+                    width: auto;
+                }
+            }
+
+            .vehicleType {
+                cursor: pointer;
+                padding: 6px 14px;
+                border: 1px solid var(--primary);
+                color: black;
+                margin-bottom: 16px;
+                border-radius: 4px;
+                flex-grow: 1;
+
+            }
+        }
+    }
+}
+
+
+@media screen and (max-width: 990px) {
+    .bookHSRPContainer {
+        padding: 3%;
+
+        .row {
+            flex-direction: column;
+
+            label,
+            input,
+            select {
+                width: 100%;
+
+            }
+
+            input,
+            select {
+                padding: 3%;
+            }
+        }
+    }
+
+}

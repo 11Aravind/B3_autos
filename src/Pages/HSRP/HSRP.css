@@ -1,0 +1,17 @@
+.hsrpMain {
+    img {
+        border-radius: 10px;
+        max-height: 50dvh;
+    }
+
+    ul {
+        li {
+            list-style-position: inside;
+            line-height: 2;
+            padding: 4px;
+            /* border-left: solid 10px var(--primary); */
+            list-style-image: url("../../assets/listicon.png");
+
+        }
+    }
+}

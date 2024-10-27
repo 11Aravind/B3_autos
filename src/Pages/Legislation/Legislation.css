@@ -1,0 +1,427 @@
+.table-grid-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(5, auto);
+  gap: 0;
+  border: 1px dotted #333;
+  /* width: 70%; */
+  margin: 0 auto;
+}
+
+.legislationPage {
+  /* Container grid with 3 columns */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+    gap: 20px; /* Space between each grid item */
+    padding: 20px;
+  }
+
+  .grid-item {
+    border: 1px dotted #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item-heading {
+    font-size: 1.2em;
+    margin: 0 0 10px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #333; /* Bottom border for each heading */
+    text-align: center;
+  }
+
+  .content-list {
+    display: flex;
+    flex-direction: column; /* Stacking items vertically */
+    gap: 10px; /* Space between each content item */
+    justify-content: space-between; /* Ensure content items are spaced out evenly */
+    flex-grow: 1; /* Allow content to grow and fill the space */
+  }
+
+  .content-list p {
+    font-size: 1em;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  /* Background colors for each paragraph in the second div */
+  .color-light-blue {
+    background-color: #add8e6;
+  }
+
+  .color-orange {
+    background-color: #ffa500;
+  }
+
+  .color-grey {
+    background-color: #d3d3d3;
+  }
+
+  .color-light-blue-top-green {
+    background: linear-gradient(to bottom, #008000 10%, #add8e6 10%);
+  }
+
+  .color-orange-top-green {
+    background: linear-gradient(to bottom, #008000 10%, #ffa500 10%);
+  }
+
+  .color-grey-top-green {
+    background: linear-gradient(to bottom, #008000 10%, #d3d3d3 10%);
+  }
+  .table-headding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .main-headding {
+      font-size: 35px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .table-sub-headding {
+      font-size: 25px;
+      line-height: 4rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+  .car-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px 100px 0px;
+  }
+}
+.table-grid-item {
+  border: 1px dotted #333; /* Dotted borders for each cell */
+  padding: 15px;
+  text-align: center;
+  img {
+    width: 100%;
+  }
+}
+.danger-msg {
+  line-height: 4rem;
+  color: red;
+  font-weight: 600;
+}
+/* .table-grid-item */
+
+.legislationPage {
+  /* Desktop Grid Layout */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    padding: 20px;
+  }
+
+  .grid-item {
+    border: 1px dotted #333;
+    padding: 20px;
+    border-radius: 8px;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item-heading {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #333;
+    text-align: center;
+  }
+
+  .content-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    justify-content: space-between;
+  }
+
+  .content-list p {
+    font-size: 1em;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  /* Color classes */
+  .color-light-blue {
+    background-color: #add8e6;
+  }
+
+  .color-orange {
+    background-color: #ffa500;
+  }
+
+  .color-grey {
+    background-color: #d3d3d3;
+  }
+
+  .color-light-blue-top-green {
+    background: linear-gradient(to bottom, #008000 10%, #add8e6 10%);
+  }
+
+  .color-orange-top-green {
+    background: linear-gradient(to bottom, #008000 10%, #ffa500 10%);
+  }
+
+  .color-grey-top-green {
+    background: linear-gradient(to bottom, #008000 10%, #d3d3d3 10%);
+  }
+  .Third-License-Plate {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .headding {
+      font-size: 25px;
+      font-weight: 600;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+    }
+    .item-heading {
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .color-code {
+      font-size: 35px;
+      font-weight: 600;
+      text-transform: uppercase;
+      padding: 50px 0px 50px 0px;
+    }
+  }
+  /* Mobile View - Stack Items Vertically */
+}
+.legislationPage {
+  /* Container grid with 3 columns */
+  .grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* Three equal-width columns */
+    gap: 20px; /* Space between each grid item */
+    padding: 20px;
+  }
+
+  .grid-item {
+    border: 1px dotted #333;
+    padding: 20px;
+    border-radius: 8px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .item-heading {
+    font-size: 1.2em;
+    margin: 0 0 10px;
+    padding-bottom: 8px;
+    border-bottom: 2px solid #333; /* Bottom border for each heading */
+    text-align: center;
+  }
+
+  .content-list {
+    display: flex;
+    flex-direction: column; /* Stacking items vertically */
+    gap: 10px; /* Space between each content item */
+    justify-content: space-between; /* Ensure content items are spaced out evenly */
+    flex-grow: 1; /* Allow content to grow and fill the space */
+  }
+
+  .content-list p {
+    font-size: 1em;
+    margin: 0;
+    text-align: center;
+    padding: 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #000;
+  }
+
+  /* Background colors for each paragraph in the second div */
+  .color-light-blue {
+    background-color: #add8e6;
+  }
+
+  .color-orange {
+    background-color: #ffa500;
+  }
+
+  .color-grey {
+    background-color: #d3d3d3;
+  }
+
+  .color-light-blue-top-green {
+    background: linear-gradient(to bottom, #008000 10%, #add8e6 10%);
+  }
+
+  .color-orange-top-green {
+    background: linear-gradient(to bottom, #008000 10%, #ffa500 10%);
+  }
+
+  .color-grey-top-green {
+    background: linear-gradient(to bottom, #008000 10%, #d3d3d3 10%);
+  }
+  .table-headding {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    .main-headding {
+      font-size: 35px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+    .table-sub-headding {
+      font-size: 25px;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+  }
+  .car-img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0px 100px 0px;
+  }
+}
+
+/* ///table  */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Three equal columns */
+  gap: 20px; /* Space between grid items */
+  padding: 20px; /* Padding around the grid */
+}
+
+.grid-item {
+  /* background-color: #f1f1f1; */
+  border: 1px solid #ccc; /* Border around grid items */
+  padding: 15px; /* Padding inside grid items */
+  border-radius: 5px; /* Rounded corners */
+  text-align: center; /* Center text */
+}
+
+.item-heading {
+  font-size: 1.2em; /* Larger font size for headings */
+  margin-bottom: 10px; /* Space below headings */
+}
+
+.content-list p {
+  margin: 5px 0; /* Space between paragraphs */
+}
+
+/* Example color classes for different fuel types */
+.color-bg {
+  padding: 5px; /* Padding inside color blocks */
+  border-radius: 3px; /* Rounded corners */
+  color: #fff; /* Text color */
+}
+
+.color-light-blue {
+  background-color: #1e90ff; /* Light blue */
+}
+
+.color-orange {
+  background-color: #ff8c00; /* Orange */
+}
+
+.color-grey {
+  background-color: #808080; /* Grey */
+}
+
+.color-light-blue-top-green {
+  background: linear-gradient(
+    to top,
+    #1e90ff,
+    #32cd32
+  ); /* Light blue to green */
+}
+
+.color-orange-top-green {
+  background: linear-gradient(to top, #ff8c00, #32cd32); /* Orange to green */
+}
+
+.color-grey-top-green {
+  background: linear-gradient(to top, #808080, #32cd32); /* Grey to green */
+}
+
+.car-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 100px 0px 100px 0px;
+}
+
+@media (max-width: 768px) {
+  .grid-container {
+    grid-template-columns: 1fr !important; /* Single column layout */
+  }
+
+  .grid-item {
+    width: 100%; /* Take full width on mobile */
+    margin-bottom: 10px; /* Space between each group */
+  }
+  .grid-container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .grid-item {
+    margin-bottom: 20px;
+  }
+
+  /* Alternate row layout */
+  .grid-item:nth-child(3n + 1) {
+    order: 0;
+  }
+
+  .grid-item:nth-child(3n + 2) {
+    order: 1;
+  }
+
+  .grid-item:nth-child(3n) {
+    order: 2;
+  }
+  .car-img > img {
+    width: 100%;
+  }
+  .car-img {
+    width: 100%;
+  }
+  .Third-License-Plate {
+    .color-code {
+      font-size: 22px !important;
+      text-align: center;
+    }
+  }
+  .table-headding {
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    .main-headding {
+      font-size: 28px !important;
+      /* font-weight: 600; */
+      /* text-transform: uppercase; */
+    }
+    .table-sub-headding {
+      font-size: 25px !important;
+
+      line-height: 3rem!important;
+      font-weight: 500!important;
+    }
+  }
+}

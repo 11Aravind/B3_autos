@@ -1,0 +1,117 @@
+.aboutPage {
+    display: flex;
+    gap: 2rem;
+    margin: 2% 0%;
+
+    .left {
+        width: 50%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+
+    }
+
+    .right {
+        flex: 1;
+        min-height: 50dvh;
+        background-image: url("../../assets/aboutBanner.webp");
+        background-size: cover;
+        border-radius: 10px;
+    }
+
+
+}
+
+.missionTeamStrength {
+    display: flex;
+    justify-content: space-between;
+
+
+
+    div {
+        padding: 2%;
+        width: 48%;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+        h2 {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+
+            svg {
+                font-size: 2rem;
+                color: var(--primary);
+            }
+        }
+    }
+}
+
+.strengthSection {
+    margin-top: 3%;
+
+
+    .strengthContainer {
+        display: flex;
+        justify-content: space-around;
+        gap: 10px;
+
+        .strength {
+
+            padding: 0% 2%;
+            border-left: 10px solid var(--primary);
+            border-radius: 10px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+
+            h3 {
+                padding-top: 2%;
+            }
+        }
+    }
+}
+
+h1 {
+    font-size: 3rem;
+    text-transform: uppercase;
+
+    span {
+        color: var(--primary);
+    }
+}
+
+.ourProcedure {
+    margin-top: 3%;
+    margin-bottom: 3%;
+    min-height: 70dvh;
+
+    .steps {
+
+
+        .step {
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+            padding: 2%;
+            margin-bottom: 1%;
+
+            div {
+                margin-left: 12%;
+            }
+
+            /* border-left: 2px solid var(--primary); */
+        }
+
+        /* position: relative; */
+        h2 {
+            position: relative;
+
+            span {
+                background-color: var(--primary);
+                color: white;
+                padding: 0% 2%;
+                font-size: 1.3rem;
+                margin-right: 1%;
+                /* border-radius: 4px; */
+            }
+        }
+
+    }
+}

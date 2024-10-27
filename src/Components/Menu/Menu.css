@@ -1,0 +1,258 @@
+/* .mobileMenuOptions {
+    position: absolute;
+    display: none;
+}
+
+#MainMenu {
+    display: flex;
+    height: 10dvh;
+    z-index: 10;
+    padding: var(--containerMargin);
+    align-items: center;
+    padding-top: 1%;
+    padding-bottom: 1%;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: 1px solid rgb(233, 229, 229);
+
+
+    .logo {
+        width: 15%;
+        cursor: pointer;
+        height: 100%;
+        background-image: url("../../assets/logo.png");
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .links {
+        display: flex;
+        gap: 20px;
+
+        a {
+            text-transform: uppercase;
+        }
+
+    }
+
+    .icons {
+        width: 10%;
+        font-size: 2rem;
+        display: flex;
+        gap: 20px;
+        cursor: pointer;
+    }
+}
+
+
+
+
+#MainMenu .links .dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+#MainMenu .dropdown-menu {
+    display: block;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px 0;
+}
+
+#MainMenu .dropdown-item {
+    position: relative;
+    padding: 8px 16px;
+    cursor: pointer;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#MainMenu .dropdown-item:hover {
+    background-color: #f1f1f1;
+}
+
+.arrow-icon {
+    font-size: 0.6rem;
+    margin-left: auto; 
+}
+
+.sub-dropdown {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 200px;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    z-index: 1;
+}
+
+.sub-dropdown a {
+    display: block;
+    padding: 8px 16px;
+    color: #333;
+}
+
+.sub-dropdown a:hover {
+    background-color: #f1f1f1;
+}
+ */
+
+ /* Arrow icon styling */
+ /* Main menu */
+#MainMenu {
+    display: flex;
+    height: 10vh;
+    z-index: 10;
+    padding: var(--containerMargin);
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background-color: white;
+    border-bottom: 1px solid rgb(233, 229, 229);
+  }
+  
+  /* Links and dropdown styling */
+  #MainMenu .links {
+    display: flex;
+    gap: 20px;
+  }
+  
+  #MainMenu .links .dropdown {
+    position: relative;
+  }
+  
+  /* Arrow icon alignment */
+  #MainMenu .dropdown .arrow-icon {
+    margin-left: 8px;
+    font-size: 0.8em;
+    vertical-align: middle;
+  }
+  
+  /* Dropdown and submenu styling */
+  #MainMenu .dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    z-index: 1;
+    padding: 10px 0;
+  }
+  
+  #MainMenu .dropdown-item {
+    position: relative;
+    padding: 8px 16px;
+    cursor: pointer;
+    color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .sub-dropdown {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    min-width: 200px;
+    background-color: #fff;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+    padding: 10px 0;
+    z-index: 1;
+  }
+  
+  .sub-dropdown a {
+    display: block;
+    padding: 8px 16px;
+    color: #333;
+  }
+  
+  .sub-dropdown a:hover {
+    background-color: #f1f1f1;
+  }
+  .mobileMenuOptions{
+    display: none;
+  }
+  .socialmedia-icons{
+    display: flex;
+    /* padding: 4px 7px; */
+    justify-content: space-between;
+    width: 68px;
+    align-items: center;
+  }
+  /* Responsive Styling */
+  @media (max-width: 768px) {
+    .mobileMenuOptions{
+        display: block;
+    }
+    #MainMenu {
+      background-color: var(--primary);
+
+    }
+  
+    #MainMenu .links {
+      flex-direction: column;
+    }
+  
+    /* Mobile dropdown styling */
+    #MainMenu .dropdown-menu,
+    .sub-dropdown {
+      position: static;
+      box-shadow: none;
+      min-width: 100%;
+      background-color: var(--primary);
+    }
+  
+    #MainMenu .dropdown-item,
+    .sub-dropdown a {
+      width: 100%;
+      padding: 8px;
+      display: block;
+      text-align: left;
+      color: #fff;
+    }
+  
+    /* Arrow icon rotation for expanded items */
+    .dropdown-item .arrow-icon {
+      transform: rotate(90deg); /* Ensures the icon rotates correctly on expand */
+    }
+  }
+  
+.arrow-icon {
+    margin-left: 8px;
+    font-size: 0.8em;
+    transition: transform 0.2s ease; /* Smooth rotation */
+  }
+  
+  /* Optional: Add rotation for sub-dropdown icon when open */
+  .sub-dropdown .arrow-icon {
+    transform: rotate(90deg); /* Rotate icon for visual feedback */
+  }
+  .logo {
+    width: 15%;
+    cursor: pointer;
+    height: 100%;
+    background-image: url("../../assets/logo.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+  
+  .logo img {
+    width: 100px; /* Adjust width as needed */
+    height: auto; /* Maintain aspect ratio */
+  }
+  
+  

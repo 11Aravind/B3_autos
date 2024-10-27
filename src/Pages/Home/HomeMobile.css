@@ -1,0 +1,48 @@
+@media screen and (max-width: 990px) {
+    .hr {
+        height: 7dvh;
+        background-size: 95%;
+    }
+
+    .banner {
+        .bannerLeft {
+            h1 {
+                width: 100%;
+            }
+        }
+
+        .HSRPButtons {
+            width: 100%;
+        }
+    }
+
+    .about {
+        flex-direction: column;
+
+        h1 {
+            text-align: center;
+        }
+
+        h1,
+        p {
+            width: 100%;
+        }
+    }
+
+    .gallery {
+        p {
+            text-align: inherit;
+        }
+
+        .galleryList {
+            flex-wrap: wrap;
+
+            .galleryItem {
+                width: 47%;
+                min-height: 20dvh;
+            }
+        }
+    }
+
+
+}

@@ -1,0 +1,47 @@
+.mediaContainer {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-between; */
+
+    gap: 20px;
+
+    /* h1{
+    font-size: 3;
+} */
+    h1,
+    h3,
+    p {
+        margin-top: 1rem;
+    }
+
+    p {
+        font-size: 0.8rem;
+    }
+
+
+
+    .mediaCard {
+        width: 47%;
+        cursor: pointer;
+        margin-bottom: 2rem;
+        border-radius: 8px;
+        /* box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px; */
+        box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+
+        .img {
+            width: 100%;
+            min-height: 300px;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .text {
+            padding: 4%;
+        }
+    }
+
+}
+
+.youtubeVideos {
+    margin-bottom: 2rem;
+}

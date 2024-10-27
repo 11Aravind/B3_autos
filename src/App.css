@@ -1,0 +1,24 @@
+#root {
+
+  --containerMargin: 0% 15%;
+  --primary: #fc830e;
+}
+
+@media screen and (max-width: 990px) {
+  #root {
+    --containerMargin: 0% 5%;
+  }
+
+  html {
+    font-size: 12px;
+  }
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -ms-box-sizing: border-box;
+}
