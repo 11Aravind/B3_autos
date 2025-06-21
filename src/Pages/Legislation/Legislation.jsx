@@ -1,45 +1,7 @@
 import Colorcode from "../../Components/Table/Colorcode/Colorcode";
+import { Legislation_Table_Content } from "../../utils/constants";
 import "./Legislation.css";
 const Legislation = () => {
-  const table_Content = [
-    {
-      label: "TRANSPORT VEHICLES – PUBLIC / RENTAL / COMMERCIAL",
-      image: "",
-    },
-    {
-      label: "NON TRANSPORT VEHICLES – PRIVATE	",
-      image: "",
-    },
-    {
-      label: "TRANSPORT VEHICLES	",
-      image: "images/1.png",
-    },
-    {
-      label: "NON TRANSPORT VEHICLES",
-      image: "images/1.png",
-    },
-    {
-      label: "TRANSPORT: ELECTRIC / BATTERY OPERATED",
-      image: "images/3.png",
-    },
-    {
-      label: "NON TRANSPORT ELECTRIC / BATTERY OPERATED",
-      image: "images/5.png",
-    },
-    {
-      label: "ELECTRIC / BATTERY OPERATED: UNDER RENT – A – CAB",
-      image: "images/5.png",
-    },
-    {
-      label: "",
-      image: "",
-    },
-    {
-      label: "UNDER RENT – A – CAB",
-      image: "images/6.png",
-    },
-  ];
-
   return (
     <section className="legislationPage">
       <div className="page-main-heading-container">
@@ -133,7 +95,7 @@ const Legislation = () => {
           </div>
         </div>
         <div className="table-grid-container">
-          {table_Content.map((item, index) => (
+          {Legislation_Table_Content.map((item, index) => (
             <div key={index} className="table-grid-item">
               {item.label}
               <img src={item.image} alt="" />

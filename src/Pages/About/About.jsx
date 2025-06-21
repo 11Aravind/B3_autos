@@ -70,7 +70,7 @@ export const About = () => {
                     stages:</p>
                 <div className="steps">
                     <div className="step">
-                        <h2> <span> Step 1</span>  B3 Autos Factory – where the basic plate making process is finished
+                        <h2> <span> Stage 1</span>  B3 Autos Factory – where the basic plate making process is finished
                             via:</h2>
                         <ul>
                             <li><b>Manufacturing</b> of aluminum plates conforming to AIX 159:2019
@@ -91,7 +91,7 @@ export const About = () => {
 
                     </div>
                     <div className="step">
-                        <h2> <span> Step 2</span> Punching Stations</h2>
+                        <h2> <span> Stage 2</span> Punching Stations</h2>
                         <ul>
                             <li><b>Punching</b> (embossing) of the plate with the unique alpha-
                                 numeric registration number of the vehicle</li>
@@ -101,7 +101,7 @@ export const About = () => {
 
                     </div>
                     <div className="step">
-                        <h2> <span> Step 3</span> Fitment Centres</h2>
+                        <h2> <span> Stage 3</span> Fitment Centres</h2>
                         <ul>
                             <li><b>Fixing</b> of the HSRP number plates to the vehicles.</li>
                             <li><b>Fastening</b> with non-removable, non-reusable snap locks/ pop

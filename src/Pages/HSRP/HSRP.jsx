@@ -1,5 +1,7 @@
 import "./HSRP.css"
-import hsrpImg from "../../assets/aboutBanner.webp"
+import At_a_glance from "@/assets/AT_A_GLANCE.jpg"
+import hsrpImg from "@/assets/aboutBanner.webp"
+import HSRP_FIXING_USE_THIS_MAGE from "@/assets/HSRP_FIXING_USE_THIS_MAGE.jpg"
 const HSRP = () => {
     return (
         <section className="hsrpMain">
@@ -12,7 +14,7 @@ const HSRP = () => {
                 unique to each vehicle and remains different for front and back
                 number plates. It also comes with third number plate (sticker) stuck
                 behind the wind shield.</p>
-            <img src={hsrpImg} alt="" width="100%" />
+            <img src={At_a_glance} alt="" width="100%" />
             <p>Hot-stamped alphabets and numerals indicate state code, district
                 code, and a car registration number, with a film containing the word
                 &quot;INDIA&quot; at an angle of 45 degrees. The international registration
@@ -51,7 +53,7 @@ const HSRP = () => {
                 <li> Orange sticker for Diesel vehicles</li>
                 <li>Gray sticker for all others</li>
             </ul>
-            <img src={hsrpImg} alt="sticker diagram" width="100%" />
+            {/* <img src={hsrpImg} alt="sticker diagram" width="100%" /> */}
             <p>A green line on the top of the sticker denotes the compliance with BS6
                 emission standards. This can be identified with the model of the car or
                 the RTO form-12 with the manufacturing date and the VIN number.</p>
@@ -84,7 +86,7 @@ const HSRP = () => {
                 customer that allows the fitment centre to mark the job
                 completed</i></p>
             <h1>Getting HSRP: from fitment centre</h1>
-            <img src={hsrpImg} alt="&lt;Workflow Diagram&gt;" width="100%" />
+            <img src={HSRP_FIXING_USE_THIS_MAGE} alt="&lt;Workflow Diagram&gt;" width="100%" />
             <ul>
                 <li>Visit a B3 Autos-approved Fitment Centre</li>
                 <li>After logging in with the Fitment Centre login id, the Fitment

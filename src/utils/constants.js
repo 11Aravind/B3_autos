@@ -25,3 +25,41 @@ export const  faqs = [
         "answer": "Yes, the option for home installation of HSRP is available.."
     },
 ];
+export const Legislation_Table_Content = [
+    {
+      label: "TRANSPORT VEHICLES – PUBLIC / RENTAL / COMMERCIAL",
+      image: "",
+    },
+    {
+      label: "NON TRANSPORT VEHICLES – PRIVATE	",
+      image: "",
+    },
+    {
+      label: "TRANSPORT VEHICLES	",
+      image: "images/TRANSPORT VEHICLES.webp",
+    },
+    {
+      label: "NON TRANSPORT VEHICLES",
+      image: "images/NON_TRANSPORT_VEHICLES.png",
+    },
+    {
+      label: "TRANSPORT: ELECTRIC / BATTERY OPERATED",
+      image: "images/ELECTRIC_BATTERY_OPERATED.png",
+    },
+    {
+      label: "NON TRANSPORT PRIVATE ELECTRIC",
+      image: "images/NON_TRANSPORT_PRIVATE_ELECTRIC (1).webp",
+    },
+    {
+      label: "ELECTRIC / BATTERY OPERATED: UNDER RENT – A – CAB",
+      image: "images/ELECTRIC_BATTERY_OPERATED_UNDER_RENT_A_CAB.png",
+    },
+    {
+      label: "",
+      image: "",
+    },
+    {
+      label: "SELF DRIVEN RENT A CAB",
+      image: "images/SELF_DRIVEN_RENT_A_CAB.jpg",
+    },
+  ];
