@@ -33,7 +33,7 @@ const Footer = () => {
             </div>
             <div className="line"></div>
             <div className="copyRightContainer">
-                <div className="copyright">@2024 b3autos</div>
+                <div className="copyright"></div>
                 <div className="socialMediaLinks">
                     <FaWhatsapp />
                     <FaFacebook />
