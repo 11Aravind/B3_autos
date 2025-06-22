@@ -1,47 +1,55 @@
-import "./Colorcode.css";
+import "./Colorcode.css"
+
 const Colorcode = () => {
   return (
-    <div className="grid-container gridPage">
-      <div className="grid-item">
-        <h2 className="item-heading">BSES: BHARAT STAGE EMISSION STANDARD</h2>
-        <div className="content-list">
-          <p>BS III & BS IV</p>
-          <p>BS III & BS IV</p>
-          <p>BS III & IV</p>
-          <p>BS VI</p>
-          <p>BS VI</p>
-          <p>BS VI</p>
+    <div class="wrapper">
+      <div class="header-box">
+        <div class="header-cell center-disply">
+          BSES: Bharat Stage Emission Standard
         </div>
+        <div class="header-cell center-disply">Fuel Type</div>
+        <div class="header-cell center-disply">3 RD LP Background</div>
       </div>
-      <div className="grid-item">
-        <h2 className="item-heading" style={{ padding: "20px 0px" }}>
-          FUEL TYPE
-        </h2>
-        <div className="content-list">
-          <p className="color-bg color-light-blue">PETROL & CNG</p>
-          <p className="color-bg color-orange">DIESEL</p>
-          <p className="color-bg color-grey">OTHER VEHICLES</p>
-          <p className="color-bg color-light-blue-top-green">
-            PETROL & CNG & LPG
-          </p>
-          <p className="color-bg color-orange-top-green">DIESEL</p>
-          <p className="color-bg color-grey-top-green">OTHER VEHICLES</p>
+
+      {/* <!-- Data Box --> */}
+      <div class="data-box">
+        <div class="data-row">
+          <div class="data-cell">BS III & BS IV</div>
+          <div class="data-cell light-blue">PETROL & CNG</div>
+          <div class="data-cell">LIGHT BLUE</div>
         </div>
-      </div>
-      <div className="grid-item">
-        <h2 className="item-heading" style={{padding: "19px 0px" }}>
-          3 RD LP BACKGROUND
-        </h2>
-        <div className="content-list">
-          <p>LIGHT BLUE</p>
-          <p>ORANGE</p>
-          <p>GREY</p>
-          <p>GREEN STRIP ON TOP LIGHT BLUE</p>
-          <p>GREEN STRIP ON TOP ORANGE</p>
-          <p>GREEN STRIP ON TOP GREY</p>
+
+        <div class="data-row">
+          <div class="data-cell">BS III & BS IV</div>
+          <div class="data-cell orange">DIESEL</div>
+          <div class="data-cell">ORANGE</div>
+        </div>
+
+        <div class="data-row">
+          <div class="data-cell">BS III & IV</div>
+          <div class="data-cell grey">OTHER VEHICLES</div>
+          <div class="data-cell">GREY</div>
+        </div>
+
+        <div class="data-row">
+          <div class="data-cell">BS VI</div>
+          <div class="data-cell green-lightblue">PETROL & CNG & LPG</div>
+          <div class="data-cell">GREEN STRIP ABOVE LIGHT BLUE</div>
+        </div>
+
+        <div class="data-row">
+          <div class="data-cell">BS VI</div>
+          <div class="data-cell green-orange">DIESEL</div>
+          <div class="data-cell">GREEN STRIP ABOVE ORANGE</div>
+        </div>
+
+        <div class="data-row">
+          <div class="data-cell">BS VI</div>
+          <div class="data-cell green-grey">OTHER VEHICLES</div>
+          <div class="data-cell">GREEN STRIP ABOVE GREY</div>
         </div>
       </div>
     </div>
-  );
-};
-export default Colorcode;
+  )
+}
+export default Colorcode

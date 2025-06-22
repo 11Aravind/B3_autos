@@ -15,6 +15,7 @@ const Twoweelers = () => {
     space_between: "5mm",
     ratio: "Plate Size: 285mm x 45mm",
     vehicle_img: "../images/two-wheeler.png",
+    number_plate: "/images/Motor_bike_No.webp",
     table_mainhedding:"TWO WHEELERS: MOTORCYCLE FRONT",
     table_sub_headding:"All Dimensions ' NOT LESS THAN '"
   };
@@ -33,7 +34,8 @@ const Twoweelers = () => {
     Thickness: "10mm",
     space_between: "10mm",
     ratio: "Plate Size: 500mm x 120mm",
-    vehicle_img: "../images/four-wheeler.png",
+    vehicle_img: "../images/four_wheel.jpg",
+    number_plate: "../images/CAR FRONT.png",
      table_mainhedding:"LMV : FOUR WHEELERS",
     table_sub_headding:""
   };
@@ -42,7 +44,8 @@ const Twoweelers = () => {
     Thickness: "10mm",
     space_between: "10mm",
     ratio: "Plate Size: 340mm x 200mm",
-    vehicle_img: "../images/heavy-wheeler.png",
+    vehicle_img: "../images/truck image.png",
+    number_plate: "../images/HEAVY.png",
      table_mainhedding:"MEDIUM, HEAVY COMMERCIAL VEHICLE & TRAILOR COMBINATION",
     table_sub_headding:"All Dimensions ' NOT LESS THAN '"
   };

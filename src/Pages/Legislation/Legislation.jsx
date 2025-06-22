@@ -115,8 +115,8 @@ const Legislation = () => {
           Color codes for ncr region
         </h1>
 
-        <Colorcode />
       </div>
+        <Colorcode />
 
       {/* // example0 */}
     </section>

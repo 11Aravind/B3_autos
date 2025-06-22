@@ -15,7 +15,9 @@
     .right {
         flex: 1;
         min-height: 50dvh;
-        background-image: url("../../assets/aboutBanner.webp");
+        background-image: url("@/assets/about_page_car.webp");
+        background-position: center;
+        background-repeat: no-repeat;
         background-size: cover;
         border-radius: 10px;
     }

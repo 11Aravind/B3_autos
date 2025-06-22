@@ -2,7 +2,7 @@ import "./table.css"
 
 import { useState } from "react";
 
-const ProductCommon = ({ vechicleDetails }) => {
+const Table = ({ vechicleDetails }) => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const handleImageClick = () => setIsPopupOpen(true);
@@ -17,7 +17,7 @@ const ProductCommon = ({ vechicleDetails }) => {
           <div className="cell cell-1">
             {vechicleDetails.ratio}
             <img
-              src="/images/3.png" // Adjust the path if necessary
+              src={vechicleDetails?.number_plate} // Adjust the path if necessary
               alt="Vehicle dimension"
               onClick={handleImageClick}
               className="clickable-image"
@@ -38,7 +38,7 @@ const ProductCommon = ({ vechicleDetails }) => {
         <div className="popup-overlay" onClick={handleClosePopup}>
           <div className="popup-content" onClick={(e) => e.stopPropagation()}>
             <button className="close-button" onClick={handleClosePopup}>✕</button>
-            <img src="/images/3.png" alt="Enlarged view" className="popup-image" />
+            <img src={vechicleDetails?.number_plate} alt="Enlarged view" className="popup-image" />
           </div>
         </div>
       )}
@@ -46,4 +46,4 @@ const ProductCommon = ({ vechicleDetails }) => {
   );
 };
 
-export default ProductCommon;
+export default Table;

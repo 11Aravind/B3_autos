@@ -9,7 +9,7 @@ const ProductCommon = ({ vechicleDetails }) => {
     Thickness: "5mm",
     space_between: "5mm",
     ratio: "Plate Size: 285mm x 45mm",
-    number_plate: "../images/1.png",
+    number_plate: "../images/C5A 285mm x 45 mm plate.webp",
     table_mainhedding: "",
     table_sub_headding: "",
   };
@@ -18,7 +18,7 @@ const ProductCommon = ({ vechicleDetails }) => {
     Thickness: "7mm",
     space_between: "5mm",
     ratio: "Plate Size: 200mm x 100mm",
-    number_plate: "../images/1.png",
+    number_plate: "../images/C5B 200 mm x 100 mm.webp",
     table_mainhedding: "",
     table_sub_headding: "",
   };
@@ -27,7 +27,7 @@ const ProductCommon = ({ vechicleDetails }) => {
     Thickness: "10mm",
     space_between: "10mm",
     ratio: "Plate Size: 500mm x 120mm",
-    number_plate: "../images/1.png",
+    number_plate: "../images/C5C 500 mmx120 mm plate.webp",
     table_mainhedding: "",
     table_sub_headding: "",
   };
@@ -36,7 +36,7 @@ const ProductCommon = ({ vechicleDetails }) => {
     Thickness: "10mm",
     space_between: "10mm",
     ratio: "Plate Size: 340mm x 200mm",
-    number_plate: "../images/1.png",
+    number_plate: "../images/C5D 340mm x 200 mm.webp",
     table_mainhedding: "",
     table_sub_headding: "",
   };
@@ -46,26 +46,6 @@ const ProductCommon = ({ vechicleDetails }) => {
         {vechicleDetails !== null ? (
           <>
             <div className="vechicle-details">
-              {/* <div className="vehicle-diamenstion">
-          <h3 className="table-main-headding">{vechicleDetails.table_mainhedding}</h3>
-          <h6 className="table-sub-headding" >{vechicleDetails.table_sub_headding}</h6>
-          <div className="grid-container">
-            <div class="grid-table">
-              <div class="cell cell-1">
-              {vechicleDetails.ratio}
-                <img src="images/4.png" alt="" />
-                </div>
-              <div class="cell cell-2">Letters & Numerals
-              </div>
-              <div class="cell cell-3">Height(H)</div>
-              <div class="cell cell-4">{vechicleDetails.height}</div>
-              <div class="cell cell-5">Thickness(T)	</div>
-              <div class="cell cell-6">{vechicleDetails.Thickness}</div>
-              <div class="cell cell-7">Space Between(S)	</div>
-              <div class="cell cell-8">{vechicleDetails.space_between}</div>
-            </div>
-          </div>
-        </div> */}
               <Table vechicleDetails={vechicleDetails} />
               <div className="vehicle-image">
                 <img

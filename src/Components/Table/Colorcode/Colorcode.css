@@ -1,42 +1,76 @@
-
-.legislationPage, .gridPage{
-.grid-container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* Three columns */
-    gap: 20px; /* Space between columns */
-    padding: 10px;
-}
-
-.grid-item {
-    border: 2px dotted #000; /* Dotted border around each group */
-    padding: 10px;
+.wrapper {
+    max-width: 800px;
+    margin: 20px auto;
+    font-family: sans-serif;
+    font-size: 14px;
+  }
+  
+  /* Header box styles */
+  .header-box {
     display: flex;
-    flex-direction: column; /* Arrange header and data vertically */
-}
-
-.header {
-    border-bottom: 2px solid #000; /* Bottom border for headers */
+    border: 2px dotted #888;
+    padding: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .header-cell {
+    flex: 1;
+    background-color: #718000;
+    color: white;
     font-weight: bold;
     text-align: center;
-    margin-bottom: 10px; /* Space between header and data */
-}
-
-.data {
-    margin: 5px 0; /* Space between data items */
-}
-
-/* Mobile styles */
-@media (max-width: 768px) {
-    
-    .header {
-        width: 33.33%; /* One third for header */
-        text-align: left; /* Align header to the left */
-    }
-
-    .data {
-        width: 33.33%; /* One third for data */
-        text-align: left; /* Align data to the left */
-    }
-   
-}
-}
+    padding: 8px;
+    border: 1px solid #ccc;
+  }
+  
+  /* Data box styles */
+  .data-box {
+    border: 2px dotted #888;
+    padding: 10px;
+  }
+  
+  .data-row {
+    display: flex;
+    margin-bottom: 8px;
+  }
+  
+  .data-cell {
+    flex: 1;
+    padding: 8px;
+    text-align: center;
+    border: 1px solid #ccc;
+    vertical-align: middle;
+  }
+  
+  /* Fuel type colors */
+  .light-blue {
+    background-color: #9eb9d4;
+  }
+  
+  .orange {
+    background-color: #ec5b20;
+  }
+  
+  .grey {
+    background-color: #4d4d4d;
+    color: white;
+  }
+  
+  .green-lightblue {
+    background: linear-gradient(to bottom, #4caf50 25%, #9eb9d4 10%);
+  }
+  
+  .green-orange {
+    background: linear-gradient(to bottom, #4caf50 25%, #ec5b20 10%);
+  }
+  
+  .green-grey {
+    background: linear-gradient(to bottom, #4caf50 25%, #4d4d4d 10%);
+    color: white;
+  }
+.center-disply{
+    align-items: center;
+    justify-content: center;
+    display: flex
+;
+}  
