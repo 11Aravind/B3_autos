@@ -46,7 +46,7 @@ const ProductCommon = ({ vechicleDetails }) => {
         {vechicleDetails !== null ? (
           <>
             <div className="vechicle-details">
-              <Table vechicleDetails={vechicleDetails} />
+              <Table vechicleDetails={vechicleDetails} cell_1_height="auto"/>
               <div className="vehicle-image">
                 <img
                   src={vechicleDetails.vehicle_img}
@@ -63,10 +63,10 @@ const ProductCommon = ({ vechicleDetails }) => {
               <h1 className="table-main-heading">CONSTRUCTION EQUIPMENT VEHICLES</h1>
               <h3 className="table-sub-heading">All Dimensions " NOT LESS THAN "</h3>
             <div className="table-conteiner">
-              <Table vechicleDetails={TABLE_1} />
-              <Table vechicleDetails={TABLE_2} />
-              <Table vechicleDetails={TABLE_3} />
-              <Table vechicleDetails={TABLE_4} />
+              <Table vechicleDetails={TABLE_1} cell_1_height="233px"/>
+              <Table vechicleDetails={TABLE_2} cell_1_height="233px"/>
+              <Table vechicleDetails={TABLE_3} cell_1_height="233px"/>
+              <Table vechicleDetails={TABLE_4} cell_1_height="233px"/>
             </div>
               <LegalStandardNotice/>
           </>

@@ -57,20 +57,45 @@
   }
   
   .green-lightblue {
-    background: linear-gradient(to bottom, #4caf50 25%, #9eb9d4 10%);
+    background: linear-gradient(to bottom, #4caf50 30%, #9eb9d4 30%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    position: relative;
   }
   
   .green-orange {
-    background: linear-gradient(to bottom, #4caf50 25%, #ec5b20 10%);
+    background: linear-gradient(to bottom, #4caf50 30%, #ec5b20 30%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    position: relative;
   }
   
   .green-grey {
-    background: linear-gradient(to bottom, #4caf50 25%, #4d4d4d 10%);
+    background: linear-gradient(to bottom, #4caf50 30%, #4d4d4d 30%);
     color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 40px;
+    position: relative;
+  }
+  
+  /* Add responsive adjustments */
+  @media screen and (max-width: 768px) {
+    .green-lightblue,
+    .green-orange,
+    .green-grey {
+      min-height: 50px; /* Increase height on mobile if needed */
+      font-size: 12px; /* Adjust font size if needed */
+    }
   }
 .center-disply{
     align-items: center;
     justify-content: center;
     display: flex
 ;
-}  
+}

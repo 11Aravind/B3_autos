@@ -3,6 +3,7 @@ import "./About.css"
 import { GoGoal } from "react-icons/go"
 import { Fa1, Fa2, Fa3, FaPeopleGroup } from "react-icons/fa6"
 import { useEffect } from "react"
+import aboutPageCar from "@/assets/about_page_car.webp"; 
 export const About = () => {
     useEffect(() => {
         window.scrollTo(0, 0)
@@ -20,7 +21,9 @@ export const About = () => {
                         an undivided focus on innovation, we offer cutting-edge solutions to
                         address the evolving needs of vehicle identification and protection.</p>
                 </div>
-                <div className="right"></div>
+                <div className="right">
+                <img src={aboutPageCar} alt="B3 Autos Car" />
+                </div>
             </section>
             <section className="missionTeamStrength">
                 <div className="mission">

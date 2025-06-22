@@ -9,10 +9,10 @@ const banners = [
     path: banner1,
     alt: "Slider 1"
   },
-  {
-    path: banner2,
-    alt: "Slider 2"
-  },
+  // {
+  //   path: banner2,
+  //   alt: "Slider 2"
+  // },
   {
     path: banner3,
     alt: "Slider 3"

@@ -89,7 +89,6 @@
 .cell-1 {
   grid-column: 1 / 3; /* Row 1 spans both columns */
   grid-row: 1; /* Row 1 */
-  height: 233px;
     justify-content: center;
     align-items: center;
     display: flex;

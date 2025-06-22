@@ -37,6 +37,10 @@ export const AllRoutes = () => {
             element: <Commingsoon />,
         },
         {
+            path: "/service2",
+            element: <Commingsoon />,
+        },
+        {
             path: "/legislation",
             element: <Legislation />,
         },

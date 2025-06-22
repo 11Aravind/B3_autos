@@ -2,7 +2,7 @@ import "./table.css"
 
 import { useState } from "react";
 
-const Table = ({ vechicleDetails }) => {
+const Table = ({ vechicleDetails,cell_1_height }) => {
   const [isPopupOpen, setIsPopupOpen] = useState(false);
 
   const handleImageClick = () => setIsPopupOpen(true);
@@ -14,7 +14,7 @@ const Table = ({ vechicleDetails }) => {
      {vechicleDetails.table_sub_headding && <h6 className="table-sub-heading">{vechicleDetails.table_sub_headding}</h6>}
       <div className="grid-containers">
         <div className="grid-table">
-          <div className="cell cell-1">
+          <div className="cell cell-1" style={{height:cell_1_height}}>
             {vechicleDetails.ratio}
             <img
               src={vechicleDetails?.number_plate} // Adjust the path if necessary

@@ -181,9 +181,9 @@ const Menu = () => {
         </div>
 
         <div className="icons socialmedia-icons">
-          <FaFacebook size={20} />
-          <FaWhatsapp size={20} />
-          <FaInstagram size={20} />
+          <FaWhatsapp size={25} />
+          <FaFacebook size={25} />
+          <FaInstagram size={25} />
         </div>
       </nav>
     </div>
