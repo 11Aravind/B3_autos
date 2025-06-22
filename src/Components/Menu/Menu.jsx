@@ -64,7 +64,7 @@ export const MENU_ITEMS = {
   ],
 }
 import { FaChevronRight } from "react-icons/fa"
-import { Link } from "react-router-dom"
+import { Link, useLocation } from "react-router-dom"
 import {
   FaBars,
   FaTimes,
@@ -81,6 +81,7 @@ import "./Menu.css"
 import "./MenuMobile.css"
 
 const Menu = () => {
+  const location = useLocation()
   const navigate = useNavigate()
   const [isMobileMenuOpened, setMobileMenu] = useState(false)
   const [isDropdownOpen, setDropdownOpen] = useState(false)
@@ -114,6 +115,13 @@ const Menu = () => {
     navigate("/")
   }, [navigate])
 
+  const isActive = (path) => {
+    if (path === "/") {
+      return location.pathname === path
+    }
+    return location.pathname.startsWith(path)
+  }
+
   return (
     <div>
       <div className="mobileMenuOptions">
@@ -128,13 +136,22 @@ const Menu = () => {
       <nav id="MainMenu" className={isMobileMenuOpened ? "open" : "close"}>
         <div className="logo" onClick={handleLogoClick} />
         <div className={`links ${isMobileMenuOpened ? "active" : ""}`}>
-          <Link to="/" onClick={closeMobileMenu}>
+          <Link
+            to="/"
+            onClick={closeMobileMenu}
+            className={isActive("/") ? "active-link" : ""}>
             Home
           </Link>
-          <Link to="/About" onClick={closeMobileMenu}>
+          <Link
+            to="/About"
+            onClick={closeMobileMenu}
+            className={isActive("/About") ? "active-link" : ""}>
             About
           </Link>
-          <Link to="/HSRP" onClick={closeMobileMenu}>
+          <Link
+            to="/HSRP"
+            onClick={closeMobileMenu}
+            className={isActive("/HSRP") ? "active-link" : ""}>
             HSRP
           </Link>
 
@@ -163,19 +180,34 @@ const Menu = () => {
           </div>
 
           {/* Main menu links */}
-          <Link to="/legislation" onClick={closeMobileMenu}>
+          <Link
+            to="/legislation"
+            onClick={closeMobileMenu}
+            className={isActive("/legislation") ? "active-link" : ""}>
             Legislation
           </Link>
-          <Link to="/quality" onClick={closeMobileMenu}>
+          <Link
+            to="/quality"
+            onClick={closeMobileMenu}
+            className={isActive("/quality") ? "active-link" : ""}>
             Quality
           </Link>
-          <NavHashLink to="/#FAQS" onClick={closeMobileMenu}>
+          <NavHashLink
+            to="/#FAQS"
+            onClick={closeMobileMenu}
+            >
             FAQS
           </NavHashLink>
-          <Link to="/Media" onClick={closeMobileMenu}>
+          <Link
+            to="/Media"
+            onClick={closeMobileMenu}
+            className={isActive("/Media") ? "active-link" : ""}>
             Media
           </Link>
-          <NavHashLink to="/#ContactUs" onClick={closeMobileMenu}>
+          <NavHashLink
+            to="/#ContactUs"
+            onClick={closeMobileMenu}
+            >
             Contact
           </NavHashLink>
         </div>
@@ -193,13 +225,19 @@ const Menu = () => {
 export default memo(Menu)
 
 const SubMenu = memo(({ title, items, isOpen, onItemClick, onToggle }) => {
+  const location = useLocation()
+
   return (
     <div className="dropdown-item" onClick={onToggle}>
       {title} <FaChevronRight className="arrow-icon" />
       {isOpen && (
         <div className="sub-dropdown">
           {items.map(({ path, label }) => (
-            <Link key={path} to={path} onClick={() => onItemClick(path)}>
+            <Link
+              key={path}
+              to={path}
+              onClick={() => onItemClick(path)}
+              className={location.pathname === path ? "active-link" : ""}>
               {label}
             </Link>
           ))}
