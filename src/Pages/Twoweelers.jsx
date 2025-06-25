@@ -14,7 +14,7 @@ const Twoweelers = () => {
     Thickness: "5mm",
     space_between: "5mm",
     ratio: "Plate Size: 285mm x 45mm",
-    vehicle_img: "../images/two-wheeler.png",
+    vehicle_img: "../images/2wheel.webp",
     number_plate: "/images/Motor_bike_No.webp",
     table_mainhedding:"TWO WHEELERS: MOTORCYCLE FRONT",
     table_sub_headding:"All Dimensions ' NOT LESS THAN '"
@@ -25,7 +25,8 @@ const Twoweelers = () => {
     Thickness: "7mm",
     space_between: "5mm",
     ratio: "Plate Size: 200mm x 100mm",
-    vehicle_img: "../images/two-three-wheeler.png",
+    vehicle_img: "../images/A1_banner.webp",
+    number_plate: "/images/2and3.webp",
      table_mainhedding:"TWO WHEELERS & THREE WHEELERS",
     table_sub_headding:"CMVR: Rule 50 & 51 : All Dimensions ' NOT LESS THAN '"
   };

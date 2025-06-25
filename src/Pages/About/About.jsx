@@ -3,7 +3,7 @@ import "./About.css"
 import { GoGoal } from "react-icons/go"
 import { Fa1, Fa2, Fa3, FaPeopleGroup } from "react-icons/fa6"
 import { useEffect } from "react"
-import aboutPageCar from "@/assets/about_page_car.webp"; 
+import aboutPageCar from "@/assets/example.webp"; 
 export const About = () => {
     useEffect(() => {
         window.scrollTo(0, 0)

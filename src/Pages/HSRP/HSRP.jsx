@@ -1,5 +1,5 @@
 import "./HSRP.css"
-import At_a_glance from "@/assets/AT_A_GLANCE.jpg"
+import At_a_glance from "@/assets/hrBanner.png"
 import hsrpImg from "@/assets/aboutBanner.webp"
 import HSRP_FIXING_USE_THIS_MAGE from "@/assets/HSRP_FIXING_USE_THIS_MAGE.jpg"
 const HSRP = () => {
