@@ -110,6 +110,13 @@
 
  /* Arrow icon styling */
  /* Main menu */
+ .navContainer{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+ }
 #MainMenu {
     display: flex;
     height: 10vh;

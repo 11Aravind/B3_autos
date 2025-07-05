@@ -1,52 +1,47 @@
-import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from "react-responsive-carousel";
-import { useState } from "react";
-import banner1 from "../../assets/A1_banner.jpg";
-import banner2 from "../../assets/A2_banner.jpg"; 
-import banner3 from "../../assets/A3_banner.jpg";
+import React, { useRef } from "react";
+import useEmblaCarousel from "embla-carousel-react";
+import Autoplay from "embla-carousel-autoplay";
+
+import banner1 from "@/assets/A1_banner.jpg";
+import banner2 from "@/assets/banner_02 .jpg";
+import banner3 from "@/assets/banner_03.jpg";
+import banner4 from "@/assets/A3_banner.jpg";
+
+import "./slider.css"; 
+
 const banners = [
-  {
-    path: banner1,
-    alt: "Slider 1"
-  },
-  // {
-  //   path: banner2,
-  //   alt: "Slider 2"
-  // },
-  {
-    path: banner3,
-    alt: "Slider 3"
-  }
+  { path: banner1, alt: "Slider 1" },
+  { path: banner2, alt: "Slider 2" },
+  { path: banner3, alt: "Slider 3" },
+  { path: banner4, alt: "Slider 4" },
 ];
 
 const ImageCarousel = () => {
-  const [key, setKey] = useState(0);
+  const autoplay = useRef(Autoplay({ delay: 3000, stopOnInteraction: false }));
+  const [emblaRef, emblaApi] = useEmblaCarousel({ loop: true }, [autoplay.current]);
 
-  const handleChange = (index) => {
-    if (index === banners.length) {
-      setKey(prev => prev + 1);
-    }
-  };
-
-  const carouselSettings = {
-    key,
-    showThumbs: false,
-    showStatus: false,
-    infiniteLoop: true,
-    autoPlay: true,
-    onChange: handleChange,
-    interval: 3000,
-    transitionTime: 600
-  };
+  const scrollPrev = () => emblaApi?.scrollPrev();
+  const scrollNext = () => emblaApi?.scrollNext();
 
   return (
-    <Carousel {...carouselSettings}>
-      {banners.map(({ path, alt }, index) => (
-        <div key={`slide-${index}`}>
-          <img src={path} alt={alt} loading="lazy" />
+    <div className="embla">
+      <div className="embla__viewport" ref={emblaRef}>
+        <div className="embla__container">
+          {banners.map((banner, index) => (
+            <div className="embla__slide" key={index}>
+              <img
+                src={banner.path}
+                alt={banner.alt}
+                className="embla__slide__img"
+              />
+            </div>
+          ))}
         </div>
-      ))}
-    </Carousel>
+      </div>
+
+      <button className="embla__prev" onClick={scrollPrev}>‹</button>
+      <button className="embla__next" onClick={scrollNext}>›</button>
+    </div>
   );
 };
 

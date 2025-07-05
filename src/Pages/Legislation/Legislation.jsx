@@ -112,7 +112,7 @@ const Legislation = () => {
         <h3 className="headding">Third License Plate</h3>
         <img src="./images/third-license-plate.jpg" alt="img" />
         <h1 className="color-code mobile-headding">
-          Color codes for ncr region
+              COLOUR CODES FOR DIFFERENT FUELS
         </h1>
 
       </div>

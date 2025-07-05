@@ -123,7 +123,7 @@ const Menu = () => {
   }
 
   return (
-    <div>
+    <div className="navContainer">
       <div className="mobileMenuOptions">
         <div className="logo" onClick={handleLogoClick} />
         {isMobileMenuOpened ? (
