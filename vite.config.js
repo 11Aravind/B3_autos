@@ -4,7 +4,7 @@ import path from 'path'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base:"/B3_autos/",
+  base:"/",
   plugins: [react()],
   resolve: {
     alias: {

@@ -122,6 +122,14 @@ const Menu = () => {
     return location.pathname.startsWith(path)
   }
 
+  // Check if any submenu items are active
+  const isProductServicesActive = () => {
+    return (
+      MENU_ITEMS.products.some(({ path }) => location.pathname.startsWith(path)) ||
+      MENU_ITEMS.services.some(({ path }) => location.pathname.startsWith(path))
+    )
+  }
+
   return (
     <div className="navContainer">
       <div className="mobileMenuOptions">
@@ -155,8 +163,11 @@ const Menu = () => {
             HSRP
           </Link>
 
-          <div className="dropdown" onMouseLeave={() => setDropdownOpen(false)}>
-            <Link to="#" onClick={toggleDropdown}>
+          <div className={`dropdown ${isProductServicesActive() ? "active-link" : ""}`} onMouseLeave={() => setDropdownOpen(false)}>
+            <Link
+              to="#"
+              onClick={toggleDropdown}
+            >
               PRODUCTS & SERVICES <FaChevronDown className="arrow-icon" />
             </Link>
             {isDropdownOpen && (
@@ -167,6 +178,7 @@ const Menu = () => {
                   isOpen={isSubDropdownOpen === "products"}
                   onToggle={() => toggleSubDropdown("products")}
                   onItemClick={handleSubmenuClick}
+                  activePath={location.pathname} // Pass active path for submenu
                 />
                 <SubMenu
                   title="Services"
@@ -174,6 +186,7 @@ const Menu = () => {
                   isOpen={isSubDropdownOpen === "services"}
                   onToggle={() => toggleSubDropdown("services")}
                   onItemClick={handleSubmenuClick}
+                  activePath={location.pathname} // Pass active path for submenu
                 />
               </div>
             )}
@@ -195,7 +208,8 @@ const Menu = () => {
           <NavHashLink
             to="/#FAQS"
             onClick={closeMobileMenu}
-            >
+            // className={location.hash === "#FAQS" ? "active-link" : ""}
+          >
             FAQS
           </NavHashLink>
           <Link
@@ -207,7 +221,8 @@ const Menu = () => {
           <NavHashLink
             to="/#ContactUs"
             onClick={closeMobileMenu}
-            >
+            // className={location.hash === "#ContactUs" ? "active-link" : ""}
+          >
             Contact
           </NavHashLink>
         </div>
@@ -222,14 +237,24 @@ const Menu = () => {
   )
 }
 
+
+
 export default memo(Menu)
 
-const SubMenu = memo(({ title, items, isOpen, onItemClick, onToggle }) => {
+const SubMenu = memo(({ title, items, isOpen, onItemClick, onToggle, activePath }) => {
   const location = useLocation()
 
+  // Check if any of the submenu's child items is active
+  const isAnyChildActive = items.some(({ path }) => location.pathname.startsWith(path))
+
   return (
-    <div className="dropdown-item" onClick={onToggle}>
-      {title} <FaChevronRight className="arrow-icon" />
+    <div className={`dropdown-item ${isAnyChildActive ? "active-link" : ""}`}>
+      <div
+        onClick={onToggle}
+        className={`submenu-title `}
+      >
+        {title} <FaChevronRight className="arrow-icon" />
+      </div>
       {isOpen && (
         <div className="sub-dropdown">
           {items.map(({ path, label }) => (
@@ -237,7 +262,8 @@ const SubMenu = memo(({ title, items, isOpen, onItemClick, onToggle }) => {
               key={path}
               to={path}
               onClick={() => onItemClick(path)}
-              className={location.pathname === path ? "active-link" : ""}>
+              className={activePath === path ? "active-link" : ""}
+            >
               {label}
             </Link>
           ))}
@@ -246,3 +272,6 @@ const SubMenu = memo(({ title, items, isOpen, onItemClick, onToggle }) => {
     </div>
   )
 })
+
+
+
